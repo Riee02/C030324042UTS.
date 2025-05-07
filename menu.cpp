@@ -53,7 +53,7 @@ do
   
   default:
     system("cls");
-    cout<<"Pilihan Tidak Tersedia";
+    cout<<"Pilihan Tidak ada";
     getch();
     break;
   }
