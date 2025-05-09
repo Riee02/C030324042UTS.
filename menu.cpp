@@ -2,6 +2,8 @@
 #include <conio.h>
 using namespace std;
 
+int aray[5];
+
 void ingfo(){
   system("cls");
   cout<<"Indonesia Jaya,Poliban";
@@ -10,9 +12,9 @@ void ingfo(){
 void dMenu(){
 system("cls");
 cout<<"Aplikasi Tampilan Menu"<<"\n";       
-cout<<"1. Menu Pertama"<<"\n";            
-cout<<"2. Menu Kedua"<<"\n";            
-cout<<"3. Menu Ketiga"<<"\n";           
+cout<<"1. Input Data Array"<<"\n";            
+cout<<"2. Output Data Array"<<"\n";            
+cout<<"3. Insertion Sort"<<"\n";           
 cout<<"4. Informasi"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
@@ -23,6 +25,15 @@ cout<<"hallo saya menu "<<pesan;
 getch();
 }
 
+void dataArray(int aray[]){
+  system("cls");
+  cout << "Input 5 angka" << endl;
+  for(int i = 0; i < 5; i++) {
+    cout << "Angka ke  " << (i + 1) << ": ";
+    cin >> aray[i];
+  }
+getch();
+}
 
 int main() {
 char pl;
@@ -33,7 +44,7 @@ do
   switch (pl)
   {
    case '1':
-    mPertama("pertama"); 
+    dataArray(aray);
     break;
    case '2':
     mPertama("ke- dua");
