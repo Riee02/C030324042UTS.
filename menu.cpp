@@ -35,6 +35,15 @@ void dataArray(int aray[]){
 getch();
 }
 
+void OutputArr(){
+  system("cls");
+  cout << "Berikut Array yang telah di input" << endl;
+  for(int i = 0 ; i < 5; i++){
+    cout << aray[i] << " ";
+  }
+  getch();
+}
+
 int main() {
 char pl;
 do
@@ -47,7 +56,7 @@ do
     dataArray(aray);
     break;
    case '2':
-    mPertama("ke- dua");
+    OutputArr();
     /* code */ 
     break;  
    case '3':
